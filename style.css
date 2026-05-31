@@ -956,10 +956,12 @@ body[data-theme="light"] .portfolio-item-overlay {
     pointer-events: none;
 }
 
-.form-input:focus ~ .form-label-floating,
-.form-input:not(:placeholder-shown) ~ .form-label-floating,
+.form-input:not(select):focus ~ .form-label-floating,
+.form-input:not(select):not(:placeholder-shown) ~ .form-label-floating,
 .form-textarea:focus ~ .form-label-floating,
-.form-textarea:not(:placeholder-shown) ~ .form-label-floating {
+.form-textarea:not(:placeholder-shown) ~ .form-label-floating,
+select.form-input:focus ~ .form-label-floating,
+select.form-input:valid ~ .form-label-floating {
     top: -0.6rem;
     left: 0.8rem;
     font-size: 0.75rem;
