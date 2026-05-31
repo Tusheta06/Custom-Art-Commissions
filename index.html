@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elara Vance — Contemporary fine art portfolio and store. Explore unique textured oil paintings, organic ceramic sculptures, and custom commissions.">
+    <title>Elara Vance | Fine Art & Ceramic Creations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo" id="logo-link">
+                ELARA<span>VANCE</span>
+            </a>
+            
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#services" class="nav-link">Commissions</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
+                    <!-- Sun Icon -->
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+                    </svg>
+                    <!-- Moon Icon -->
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                </button>
+                
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container hero-grid">
+            <div class="hero-content reveal">
+                <span class="hero-tagline">Fine Art &amp; Clay Sculptures</span>
+                <h1 class="hero-title">Capturing <span>Ethereal</span> moments in texture and form.</h1>
+                <p class="hero-description">
+                    Welcome to the digital studio of Elara Vance. Explore handmade ceramics, raw abstract landscapes on canvas, and custom commissions designed to invite calm and wonder into your living spaces.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#gallery" class="btn btn-primary">Explore Gallery</a>
+                    <a href="#services" class="btn btn-secondary">Commissions</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual reveal">
+                <div class="hero-image-wrapper">
+                    <img src="images/elara_hero.png" alt="Aetherial Whispers No. 12 - Fine art painting by Elara Vance">
+                    <div class="art-label glass-card">
+                        <h4>Aetherial Whispers</h4>
+                        <p>Oil &amp; Gold Leaf on Canvas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container about-grid">
+            <div class="about-image reveal">
+                <img src="images/elara_studio.png" alt="Elara Vance working in her sunlit studio">
+            </div>
+            <div class="about-content reveal">
+                <span class="section-subtitle">The Artist Behind the Canvas</span>
+                <h2 class="section-title">Elara Vance</h2>
+                <div class="about-quote">
+                    "My creations are conversations between the structure of clay and the fluid motion of oil paint."
+                </div>
+                <div class="about-text">
+                    <p>
+                        Based in Brooklyn, New York, Elara Vance is an independent multi-disciplinary artist. Her creative practice is deeply rooted in organic textures, natural color palettes, and the peaceful juxtaposition of sculpture and paint.
+                    </p>
+                    <p>
+                        With over a decade of studio work, Elara experiments with raw clay glazes, gold leaf overlays, and impasto techniques. She believes that art should not merely occupy a wall or shelf, but change the ambient energy of a room.
+                    </p>
+                </div>
+                <span class="about-signature">Elara Vance</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery / Portfolio Section -->
+    <section class="section" id="gallery">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Exhibitions &amp; Store</span>
+                <h2 class="section-title">The Studio Archive</h2>
+                <p style="color: var(--text-secondary);">Filter through recent releases. Selected pieces are available for purchase, and others serve as inspiration for custom commissions.</p>
+            </div>
+            
+            <div class="portfolio-filters reveal">
+                <button class="filter-btn active" data-filter="all">All Works</button>
+                <button class="filter-btn" data-filter="paintings">Paintings</button>
+                <button class="filter-btn" data-filter="ceramics">Ceramics</button>
+                <button class="filter-btn" data-filter="prints">Fine Prints</button>
+            </div>
+
+            <div class="portfolio-grid reveal">
+                <!-- Gallery Card 1 - Painting (Image Asset) -->
+                <div class="portfolio-item glass-card" data-category="paintings" data-id="p1">
+                    <div class="portfolio-item-image">
+                        <img src="images/elara_hero.png" alt="Aetherial Whispers No. 12">
+                    </div>
+                    <div class="portfolio-item-overlay">
+                        <span class="portfolio-tag">Oil Painting</span>
+                        <h3 class="portfolio-item-title">Aetherial Whispers</h3>
+                        <span class="portfolio-price">$1,850</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Card 2 - Ceramic (Image Asset) -->
+                <div class="portfolio-item glass-card" data-category="ceramics" data-id="c1">
+                    <div class="portfolio-item-image">
+                        <img src="images/ceramic_vase.png" alt="Luna Organic Vessel">
+                    </div>
+                    <div class="portfolio-item-overlay">
+                        <span class="portfolio-tag">Ceramic</span>
+                        <h3 class="portfolio-item-title">Luna Organic Vessel</h3>
+                        <span class="portfolio-price">$340</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Card 3 - Print (SVG Asset) -->
+                <div class="portfolio-item glass-card" data-category="prints" data-id="r1">
+                    <div class="portfolio-item-svg">
+                        <!-- Elegant Minimalist Fern Linocut SVG -->
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="200" height="200" fill="#f1f5f9"/>
+                            <rect x="15" y="15" width="170" height="170" stroke="#1e293b" stroke-width="0.5"/>
+                            <path d="M100 170C100 130 92 80 125 45M100 140C94 125 80 115 72 120M100 120C106 105 120 95 128 100M100 100C94 85 82 75 75 80M100 80C106 65 118 55 124 60M100 60C95 48 85 40 80 43M100 45C104 35 112 28 116 31" stroke="#1e293b" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="portfolio-item-overlay">
+                        <span class="portfolio-tag">Linocut Print</span>
+                        <h3 class="portfolio-item-title">Whispering Ferns</h3>
+                        <span class="portfolio-price">$85</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Card 4 - Painting (SVG Asset) -->
+                <div class="portfolio-item glass-card" data-category="paintings" data-id="p2">
+                    <div class="portfolio-item-svg">
+                        <!-- Abstract Golden Accent Paint Swirl SVG -->
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="paint-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#1e293b" />
+                                    <stop offset="50%" stop-color="#334155" />
+                                    <stop offset="100%" stop-color="#0f172a" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="200" height="200" fill="url(#paint-grad)"/>
+                            <path d="M20 120C60 70 140 160 180 100C160 60 120 40 80 70C50 90 30 110 20 120Z" fill="#d4af37" opacity="0.8"/>
+                            <path d="M40 140C80 90 120 140 160 110" stroke="#c87a53" stroke-width="6" stroke-linecap="round" fill="none"/>
+                            <circle cx="150" cy="60" r="15" fill="#f1f5f9" opacity="0.9"/>
+                        </svg>
+                    </div>
+                    <div class="portfolio-item-overlay">
+                        <span class="portfolio-tag">Mixed Media</span>
+                        <h3 class="portfolio-item-title">Terra &amp; Gold</h3>
+                        <span class="portfolio-price">$980</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Card 5 - Ceramic (SVG Asset) -->
+                <div class="portfolio-item glass-card" data-category="ceramics" data-id="c2">
+                    <div class="portfolio-item-svg">
+                        <!-- Minimalist Ceramic Vase line SVG -->
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="200" height="200" fill="#f8fafc"/>
+                            <path d="M85 50C85 45 115 45 115 50M85 50L90 70C70 85 65 120 75 140C85 160 115 160 125 140C135 120 130 85 110 70L115 50M90 70L110 70" stroke="#b8901c" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M80 110C95 115 105 110 120 115" stroke="#c87a53" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M75 130C90 135 100 130 125 132" stroke="#334155" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="portfolio-item-overlay">
+                        <span class="portfolio-tag">Ceramic</span>
+                        <h3 class="portfolio-item-title">Ember Raku Vase</h3>
+                        <span class="portfolio-price">$280</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Card 6 - Print (SVG Asset) -->
+                <div class="portfolio-item glass-card" data-category="prints" data-id="r2">
+                    <div class="portfolio-item-svg">
+                        <!-- Abstract Moon and Mountain Silhouette Print SVG -->
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="200" height="200" fill="#e2e8f0"/>
+                            <circle cx="100" cy="75" r="30" fill="#c87a53" opacity="0.85"/>
+                            <path d="M20 160L80 90L130 140L180 80L220 160H20Z" fill="#1e293b"/>
+                            <path d="M120 160L160 115L190 140L210 110L230 160H120Z" fill="#0f172a" opacity="0.5"/>
+                            <line x1="30" y1="170" x2="170" y2="170" stroke="#1e293b" stroke-width="1"/>
+                        </svg>
+                    </div>
+                    <div class="portfolio-item-overlay">
+                        <span class="portfolio-tag">Woodcut Print</span>
+                        <h3 class="portfolio-item-title">Solitude</h3>
+                        <span class="portfolio-price">$95</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Custom Commissions -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Collaboration &amp; Services</span>
+                <h2 class="section-title">Custom Commissions &amp; Events</h2>
+            </div>
+            
+            <p class="services-intro reveal">
+                Bring a unique vision to life. I partner with design firms, private collectors, and galleries to build cohesive custom collections, statement oil paintings, and signature ceramics.
+            </p>
+
+            <div class="services-grid reveal">
+                <div class="service-card glass-card">
+                    <div class="service-icon">🎨</div>
+                    <h3 class="service-title">Oil Commissions</h3>
+                    <p class="service-desc">Collaboratively map out color theory, scale, and canvas textures to fit perfectly in your home design or commercial environment.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <div class="service-icon">🏺</div>
+                    <h3 class="service-title">Custom Ceramic Ware</h3>
+                    <p class="service-desc">From decorative statement vases to bespoke table collections designed for specialty culinary events and dining sets.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <div class="service-icon">🏛️</div>
+                    <h3 class="service-title">Art Workshops</h3>
+                    <p class="service-desc">Private instruction and small-group masterclasses held in my Brooklyn studio, focused on ceramic clay building and oil glazing.</p>
+                </div>
+            </div>
+
+            <!-- Commission Calculator -->
+            <div class="calculator-section reveal">
+                <div class="calc-box glass-card">
+                    <h3 class="calc-title">Interactive Commission Estimator</h3>
+                    
+                    <form id="calc-form">
+                        <div class="form-group">
+                            <label for="calc-medium">Select Medium</label>
+                            <select id="calc-medium" class="form-select">
+                                <option value="oil">Custom Oil Painting (Impasto Texture)</option>
+                                <option value="ceramic">Bespoke Ceramic Sculpture / Vessel</option>
+                                <option value="print">Limited-Edition Linocut Run (10 Prints)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="calc-size">Dimensions / Scale</label>
+                            <select id="calc-size" class="form-select">
+                                <option value="small">Small (up to 12" x 16" / Small Tableware)</option>
+                                <option value="medium" selected>Medium (up to 24" x 36" / Classic Vessel)</option>
+                                <option value="large">Large (up to 48" x 60" / Floor Sculpture)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="calc-framing" checked>
+                                Museum-grade custom oak framing
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="calc-rush">
+                                Rush delivery (Guaranteed within 3 weeks)
+                            </label>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="calc-result-panel glass-card">
+                    <div class="result-breakdown">
+                        <h4>Cost Estimation Summary</h4>
+                        <div class="breakdown-row">
+                            <span>Base Rate:</span>
+                            <span id="result-base">$750</span>
+                        </div>
+                        <div class="breakdown-row">
+                            <span>Scale Factor:</span>
+                            <span id="result-scale">x 1.5</span>
+                        </div>
+                        <div class="breakdown-row">
+                            <span>Framing &amp; Materials:</span>
+                            <span id="result-materials">+$180</span>
+                        </div>
+                        <div class="breakdown-row">
+                            <span>Delivery Preference:</span>
+                            <span id="result-delivery">Standard</span>
+                        </div>
+                        <div class="breakdown-row total">
+                            <span>Estimated Total:</span>
+                            <span id="result-total-label">$1,305</span>
+                        </div>
+                    </div>
+
+                    <div class="price-display">
+                        <div class="price-tag" id="price-tag">$1,305</div>
+                        <div class="price-disclaimer">All custom commissions include a detailed creative contract and progress check-ins.</div>
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary" style="text-align: center;">Inquire About This Estimate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container contact-grid">
+            <div class="contact-info reveal">
+                <div>
+                    <span class="section-subtitle">Get in Touch</span>
+                    <h2 class="section-title">Let's Create Together</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 3rem;">
+                        Have a project, commission, or exhibition inquiry? Reach out via the form, or drop by the studio during public viewing hours.
+                    </p>
+                    
+                    <div class="contact-method">
+                        <div class="contact-method-title">Studio Address</div>
+                        <div class="contact-method-detail">
+                            The Foundry Arts, Studio 402<br>
+                            188 Richards St, Brooklyn, NY 11231
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-method-title">Email Inquiry</div>
+                        <div class="contact-method-detail">hello@elaravance.com</div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-method-title">Public Hours</div>
+                        <div class="contact-method-detail">Saturdays, 11:00 AM — 5:00 PM</div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Pinterest">
+                        <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.993 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.091.377-.293 1.194-.333 1.355-.053.218-.176.265-.405.158-1.513-.704-2.457-2.912-2.457-4.686 0-3.816 2.773-7.32 7.994-7.32 4.197 0 7.459 2.991 7.459 6.988 0 4.168-2.628 7.522-6.275 7.522-1.226 0-2.379-.637-2.773-1.389l-.756 2.88c-.273 1.052-1.014 2.37-1.509 3.178C10.278 23.902 11.116 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-form-box glass-card reveal">
+                <form id="contact-form" autocomplete="off">
+                    <div class="form-input-container">
+                        <input type="text" id="contact-name" class="form-input" placeholder=" " required>
+                        <label for="contact-name" class="form-label-floating">Your Name</label>
+                    </div>
+
+                    <div class="form-input-container">
+                        <input type="email" id="contact-email" class="form-input" placeholder=" " required>
+                        <label for="contact-email" class="form-label-floating">Your Email</label>
+                    </div>
+
+                    <div class="form-input-container">
+                        <select id="contact-interest" class="form-input" style="padding-top: 0.6rem;" required>
+                            <option value="" disabled selected hidden></option>
+                            <option value="buy">Purchase Gallery Artwork</option>
+                            <option value="commission">Custom Project / Commission</option>
+                            <option value="workshop">Art Workshops &amp; Classes</option>
+                            <option value="collab">Exhibitions &amp; Collaborations</option>
+                        </select>
+                        <label for="contact-interest" class="form-label-floating" style="top: -0.6rem; left: 0.8rem; font-size: 0.75rem; color: var(--accent-gold); background-color: var(--bg-surface); padding: 0 0.4rem;">Area of Interest</label>
+                    </div>
+
+                    <div class="form-input-container">
+                        <textarea id="contact-message" class="form-textarea" rows="5" placeholder=" " required></textarea>
+                        <label for="contact-message" class="form-label-floating">Your Message</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#hero" class="logo">ELARA<span>VANCE</span></a>
+                <p class="footer-desc">
+                    Creating bespoke tactile art pieces that resonate with your home, inviting organic quietness and reflection.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About the Artist</a></li>
+                    <li><a href="#gallery">Studio Archive</a></li>
+                    <li><a href="#services">Commissions &amp; Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Studio Newsletter</h4>
+                <p class="footer-desc">Subscribe to receive first access to new studio collections, workshop announcements, and behind-the-scenes journal logs.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Your email address" required aria-label="Email for Newsletter">
+                    <button type="submit" class="btn btn-primary" style="padding: 0.8rem 1.5rem;">Join</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Elara Vance. All rights reserved. Created with artistic intent.</p>
+            <p>Terms &amp; Conditions | Privacy Policy</p>
+        </div>
+    </footer>
+
+    <!-- Artwork Detail Modal -->
+    <div class="modal" id="artwork-modal">
+        <div class="modal-content">
+            <button class="modal-close-btn" id="modal-close" aria-label="Close modal">✕</button>
+            <div class="modal-grid">
+                <div class="modal-media" id="modal-media-container">
+                    <!-- Dynamic Media Content -->
+                </div>
+                <div class="modal-info">
+                    <div>
+                        <span class="modal-tag" id="modal-art-tag">Category</span>
+                        <h3 class="modal-title" id="modal-art-title">Artwork Name</h3>
+                        <div class="modal-price" id="modal-art-price">$0.00</div>
+                        <p class="modal-desc" id="modal-art-desc">Artwork narrative description will go here, detailing the artist's mindset, the physical materials, and the structural highlights of the piece.</p>
+                    </div>
+                    
+                    <div>
+                        <div class="modal-meta">
+                            <div class="modal-meta-row">
+                                <span class="modal-meta-label">Dimensions</span>
+                                <span class="modal-meta-val" id="modal-art-dims">30" x 40"</span>
+                            </div>
+                            <div class="modal-meta-row">
+                                <span class="modal-meta-label">Medium</span>
+                                <span class="modal-meta-val" id="modal-art-medium">Oil on Canvas</span>
+                            </div>
+                            <div class="modal-meta-row">
+                                <span class="modal-meta-label">Availability</span>
+                                <span class="modal-meta-val" id="modal-art-status" style="color: #22c55e;">Available</span>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-primary" id="modal-inquire-btn" style="width: 100%;">Inquire Purchase</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
